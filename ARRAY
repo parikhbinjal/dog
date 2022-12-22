@@ -1,0 +1,29 @@
+package binjalexamples;
+
+import java.util.*;
+
+public class Arlist {
+
+	public static void main(String[] args) {
+		
+		ArrayList<ArrayList <String>> shoppinglist = new ArrayList();
+		
+		ArrayList <String> grocerylist= new ArrayList();
+		grocerylist.add("pasta");
+		grocerylist.add("macroni");
+		grocerylist.add("maggi");
+
+		ArrayList<String> backerylist= new ArrayList();
+		backerylist.add("cheese");
+		backerylist.add("milk");
+		backerylist.add("cream");
+		
+		shoppinglist.add(backerylist);
+		shoppinglist.add(grocerylist);
+
+		
+		
+System.out.println(shoppinglist.get(0).get(1));
+	}
+
+}
